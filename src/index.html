@@ -45,74 +45,74 @@
   const datepicker = document.querySelector('#datepicker');
   const rangepicker = document.querySelector('#rangepicker');
   const withLogo = document.querySelector('#withLogo')
-  const date = moment("2013-12-24 14:30");
+  const date = moment("2019-01-15 14:30");
   const autoComplete = document.getElementById('auto-complete');
   console.log(autoComplete)
   autoComplete.addEventListener('isLoaded$',function() {
     console.log('FROM INDEX AUTO')
     autoComplete.initialize({
       values: [
-        { value: 'bestial' },
-        { value: 'collosal' },
-        { value: 'cuirasé' },
-        { value: 'bestial' },
-        { value: 'collosal' },
-        { value: 'cuirasé' },
-        { value: 'bestial' },
-        { value: 'collosal' },
-        { value: 'cuirasé' },
-        { value: 'bestial' },
-        { value: 'collosal' },
-        { value: 'cuirasé' },
-        { value: 'bestial' },
-        { value: 'collosal' },
-        { value: 'cuirasé' }
+        { value: '' },
+        { value: '' },
+        { value: '' },
+        { value: '' },
+        { value: '' },
+        { value: '' },
+        { value: '' },
+        { value: '' },
+        { value: '' },
+        { value: '' },
+        { value: '' },
+        { value: '' },
+        { value: '' },
+        { value: '' },
+        { value: '' }
       ],
       property: 'value',
-      placeholder: 'recherchez ...'
+      placeholder: '...'
     })
   })
   rangepicker.addEventListener('IsLoaded$', function() {
     console.log('IsLoaded timepicker')
     rangepicker.initAppState({
         mode: 'range',
-        calendarIcon: 'far fa-calendar-alt',
+        calendarIcon: 'fas fa-calendar-alt',
         angleRightIcon: 'fas fa-angle-right',
         angleLeftIcon: 'fas fa-angle-left',
         closeIcon: 'fas fa-times',
         activePreviousDate: true,
-        rangeStartValue: '2018-03-23',
-        rangeEndValue: '2018-03-30',
+        rangeStartValue: '',
+        rangeEndValue: '',
         startWeek: 1,
         labels: {
-          title: 'Date de début',
-          title_2: 'Date de Fin',
-          placeholder: 'séléctionnez une date',
-          placeholder_2: 'séléctionnez une date',
-          datepickerBtnValue: 'Validé',
-          rangeNextBtnValue: 'Suivant',
+          title: 'Date of start',
+          title_2: 'Date of end',
+          placeholder: '',
+          placeholder_2: '',
+          datepickerBtnValue: '',
+          rangeNextBtnValue: '',
           months: [
-            'Janvier',
-            'Février',
-            'Mars',
-            'Avril',
-            'Mai',
-            'Juin',
-            'Juillet',
-            'Aout',
-            'Septembre',
-            'Octobre',
-            'Novembre',
-            'Décembre'
+            'Jan',
+            'Feb',
+            'Mar',
+            'Apr',
+            'May',
+            'Jun',
+            'Jul',
+            'Aug',
+            'Sep',
+            'Oct',
+            'Nov',
+            'Dec'
           ],
-          days: [
-            'lundi',
-            'mardi',
-            'mercredi',
-            'jeudi',
-            'vendredi',
-            'samedi',
-            'dimanche'
+          day: [
+          'monday',
+            'tuesday',
+            'wednesday',
+            'thursday',
+            'friday',
+            'saturday',
+            'sunday'
           ]
         }
       })
